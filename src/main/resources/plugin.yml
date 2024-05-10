@@ -1,0 +1,8 @@
+name: HealthIndicator
+version: '${version}'
+main: pl.bkkuc.healthindicator.Plugin
+api-version: '1.16'
+
+softdepend:
+  - PlaceholderAPI
+  - DecentHolograms

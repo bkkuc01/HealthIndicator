@@ -1,0 +1,27 @@
+positive:
+  display: '&a+$amount❤'
+  duration: 3
+  # List of entity who has indicator.
+  # https://helpch.at/docs/1.16.5/org/bukkit/entity/EntityType.html
+  entities:
+    - 'PLAYER'
+  # Why does positive indication appear when healing?
+  # https://helpch.at/docs/1.16.5/org/bukkit/event/entity/EntityRegainHealthEvent.RegainReason.html
+  cause:
+    - 'SATIATED'
+    - 'EATING'
+    - 'MAGIC'
+
+negative:
+  display: '&c-$amount❤'
+  duration: 3
+  # List of entity who has indicator.
+  # https://helpch.at/docs/1.16.5/org/bukkit/entity/EntityType.html
+  entities:
+    - 'PLAYER'
+  # In what circumstances does negative indication appear when taking damage?
+  # https://helpch.at/docs/1.16.5/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+  cause:
+    - 'ENTITY_ATTACK'
+    - 'ENTITY_SWEEP_ATTACK'
+    - 'FALL'
